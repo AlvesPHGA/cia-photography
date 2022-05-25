@@ -1,25 +1,29 @@
 doctype
 html(lang="pt-br")
-    block vars
-    
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+   block vars
 
-        link(rel="stylesheet", href="css/main.css")
-        
-        if title 
-            - pipe = ''
-        title #{title} #{pipe}
+   head
+      meta(charset="UTF-8")
+      meta(http-equiv="X-UA-Compatible", content="IE=edge")
+      meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
-    body 
-        include ../includes/global/header
+      link(rel='preconnect' href='https://fonts.googleapis.com')
+      link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+      link(href='https://fonts.googleapis.com/css2?family=Anybody&family=Bebas+Neue&family=Lora&family=Noto+Sans&display=swap' rel='stylesheet')
 
-        main
-            block content
+      link(rel="stylesheet", href="css/main.css")
 
-        include ../includes/global/footer
+      if title
+         - pipe = ''
+      title #{title} #{pipe}
+
+   body
+      include ../includes/global/header
+
+      main
+         block content
+
+      include ../includes/global/footer
 
 
-        script(src="../main.js") 
+      script(src="../main.js")
