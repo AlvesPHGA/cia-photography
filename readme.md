@@ -6,10 +6,12 @@ The website also has a UI Design project made by me.
 ## Technology and Tools
 
 1. HTML
-   1.1 Pug
+
+   1. Pug
 
 2. CSS
-   2.1 Sass
+
+   1. Sass
 
 3. JavaScript
 4. Babel
