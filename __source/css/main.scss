@@ -1,1 +1,11 @@
+@import "main/utils/class";
+@import "main/utils/colors";
+
+@import "main/mixins/medias";
+@import "main/mixins/fonts";
+
 @import "main/main";
+
+@import "main/includes/global/header";
+
+@import "main/includes/global/footer";

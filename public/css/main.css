@@ -1,2 +1,66 @@
-main{font-size:60px;font-family:"Courier New", Courier, monospace}
+/*!*****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./__source/css/main.scss ***!
+  \*****************************************************************************************************************/
+.__width-1200 {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  position: relative;
+  height: 150px;
+  background: #5a0000;
+  display: flex; }
+  header svg {
+    position: absolute;
+    z-index: 0;
+    width: fit-content;
+    height: 80%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%); }
+  header .__width-1200 {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 300px; }
+    header .__width-1200 img {
+      height: 100%;
+      width: 400px;
+      object-fit: contain; }
+    header .__width-1200 .nav-menu {
+      margin-top: 30px; }
+      header .__width-1200 .nav-menu a {
+        font-family: "Anybody", cursive;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: auto;
+        color: #fff;
+        text-decoration: none;
+        margin-right: 20px;
+        position: relative; }
+        header .__width-1200 .nav-menu a::after {
+          content: "";
+          width: 0%;
+          height: 2px;
+          position: absolute;
+          left: 0;
+          top: 20px;
+          background: #fbc8af; }
+        header .__width-1200 .nav-menu a:hover {
+          transition: 0.7s linear;
+          font-weight: 900;
+          color: #fbc8af; }
+          header .__width-1200 .nav-menu a:hover::after {
+            width: 100%;
+            transition: 0.7s linear; }
+
+footer {
+  position: relative; }
 

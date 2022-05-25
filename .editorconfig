@@ -2,7 +2,6 @@
 charset = utf-8
 end_of_line = lf
 
-
 [*.{pug,scss}]
 indent_size = 3
 indent_style = space

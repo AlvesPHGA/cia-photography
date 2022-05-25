@@ -1,0 +1,31 @@
+@mixin font_anybody($_fSize, $_fWeight, $_color, $_lHeight) {
+   font-family: "Anybody", cursive;
+   font-size: $_fSize;
+   font-weight: $_fWeight;
+   line-height: $_lHeight;
+   color: $_color;
+}
+
+@mixin font_bebas($_fSize, $_color, $_lHeight) {
+   font-family: "Bebas Neue", cursive;
+   font-size: $_fSize;
+   font-weight: 400;
+   line-height: $_lHeight;
+   color: $_color;
+}
+
+@mixin font_lora($_fSize, $_fWeight, $_color, $_lHeight) {
+   font-family: "Lora", serif;
+   font-size: $_fSize;
+   font-weight: $_fWeight;
+   line-height: $_lHeight;
+   color: $_color;
+}
+
+@mixin font_noto_sans($_fSize, $_fWeight, $_color, $_lHeight) {
+   font-family: "Noto Sans", sans-serif;
+   font-size: $_fSize;
+   font-weight: $_fWeight;
+   line-height: $_lHeight;
+   color: $_color;
+}

@@ -1,0 +1,67 @@
+header {
+   position: relative;
+   height: 150px;
+   background: $blood_red;
+   display: flex;
+
+   svg {
+      position: absolute;
+      z-index: 0;
+      width: fit-content;
+      height: 80%;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+   }
+
+   .__width-1200 {
+      padding: 15px 0;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 300px;
+
+      img {
+         height: 100%;
+         width: 400px;
+         object-fit: contain;
+      }
+
+      .nav-menu {
+         margin-top: 30px;
+
+         a {
+            @include font_anybody(
+               $_fSize: 18px,
+               $_fWeight: 400,
+               $_color: $white,
+               $_lHeight: auto
+            );
+
+            text-decoration: none;
+            margin-right: 20px;
+            position: relative;
+
+            &::after {
+               content: "";
+               width: 0%;
+               height: 2px;
+               position: absolute;
+               left: 0;
+               top: 20px;
+               background: $apricot;
+            }
+            &:hover {
+               transition: 0.7s linear;
+               font-weight: 900;
+               color: $apricot;
+
+               &::after {
+                  width: 100%;
+                  transition: 0.7s linear;
+               }
+            }
+         }
+      }
+   }
+}
