@@ -17,5 +17,6 @@ The website also has a UI Design project made by me.
 4. Babel
 5. Webpack
 6. node.js
+   1. install necessite: npm i or npm install
 
 This project also use the plugin Editor config to VS Code
