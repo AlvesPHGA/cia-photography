@@ -1,3 +1,92 @@
 footer {
    position: relative;
+   padding: 80px 0;
+   background: $blood_red;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   svg {
+      position: absolute;
+      z-index: 0;
+      width: fit-content;
+      height: 120px;
+      right: 0;
+      bottom: 440px;
+   }
+
+   .__width-1200 {
+      display: flex;
+      justify-content: space-between;
+
+      img {
+         height: 100%;
+         width: 400px;
+         object-fit: contain;
+      }
+
+      .info-box {
+         display: flex;
+         flex-direction: column;
+
+         .address {
+            width: 200px;
+         }
+
+         .mail {
+            margin-block: 20px;
+         }
+
+         span {
+            @include font_noto_sans(
+               $_fSize: 16px,
+               $_fWeight: 400,
+               $_color: $papaya_whip,
+               $_lHeight: auto
+            );
+         }
+
+         .social-media {
+            margin-top: 30px;
+            svg {
+               position: static;
+               width: 45px;
+               height: 45px;
+            }
+         }
+      }
+
+      .links-site {
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+
+         a {
+            text-decoration: none;
+
+            &:hover {
+               transition: 0.7s linear;
+               color: $apricot;
+            }
+
+            @include font_anybody(
+               $_fSize: 18px,
+               $_fWeight: 400,
+               $_color: $papaya_whip,
+               $_lHeight: auto
+            );
+         }
+      }
+   }
+
+   .reserved {
+      margin-top: 100px;
+
+      @include font_noto_sans(
+         $_fSize: 18px,
+         $_fWeight: 400,
+         $_color: $barned_red,
+         $_lHeight: 27px
+      );
+   }
 }
