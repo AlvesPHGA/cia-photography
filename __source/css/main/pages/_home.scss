@@ -1,0 +1,36 @@
+.home {
+   @import "../includes/global/subheader";
+
+   .text {
+      @include font_noto_sans(
+         $_fSize: 18px,
+         $_fWeight: 400,
+         $_color: $white,
+         $_lHeight: 27px
+      );
+   }
+
+   .subheader {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 110%;
+      .__width-1200 {
+         display: flex;
+         align-items: center;
+         height: 100%;
+
+         .text {
+            width: 500px;
+         }
+
+         img {
+            width: 400px;
+            border-radius: 7px;
+            object-fit: cover;
+            position: absolute;
+            right: 0;
+            top: 55px;
+         }
+      }
+   }
+}

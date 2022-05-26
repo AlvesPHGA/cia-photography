@@ -61,6 +61,36 @@ header {
             width: 100%;
             transition: 0.7s linear; }
 
+.home .subheader {
+  position: relative;
+  background: #7f1300;
+  height: 300px; }
+
+.home .text {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #fff; }
+
+.home .subheader {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 110%; }
+  .home .subheader .__width-1200 {
+    display: flex;
+    align-items: center;
+    height: 100%; }
+    .home .subheader .__width-1200 .text {
+      width: 500px; }
+    .home .subheader .__width-1200 img {
+      width: 400px;
+      border-radius: 7px;
+      object-fit: cover;
+      position: absolute;
+      right: 0;
+      top: 55px; }
+
 footer {
   position: relative;
   padding: 80px 0;
