@@ -85,9 +85,22 @@ footer {
     footer .__width-1200 .info-box {
       display: flex;
       flex-direction: column; }
-      footer .__width-1200 .info-box .address {
-        width: 200px; }
-      footer .__width-1200 .info-box .mail {
+      footer .__width-1200 .info-box .contacts .address,
+      footer .__width-1200 .info-box .contacts .mail,
+      footer .__width-1200 .info-box .contacts .number-phone {
+        display: flex;
+        align-items: center;
+        gap: 12px; }
+        footer .__width-1200 .info-box .contacts .address svg,
+        footer .__width-1200 .info-box .contacts .mail svg,
+        footer .__width-1200 .info-box .contacts .number-phone svg {
+          position: static;
+          width: 25px;
+          height: 25px; }
+      footer .__width-1200 .info-box .contacts .address {
+        width: 200px;
+        align-items: flex-start; }
+      footer .__width-1200 .info-box .contacts .mail {
         margin-block: 20px; }
       footer .__width-1200 .info-box span {
         font-family: "Noto Sans", sans-serif;

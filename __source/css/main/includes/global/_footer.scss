@@ -29,12 +29,28 @@ footer {
          display: flex;
          flex-direction: column;
 
-         .address {
-            width: 200px;
-         }
+         .contacts {
+            .address,
+            .mail,
+            .number-phone {
+               display: flex;
+               align-items: center;
+               gap: 12px;
+               svg {
+                  position: static;
+                  width: 25px;
+                  height: 25px;
+               }
+            }
 
-         .mail {
-            margin-block: 20px;
+            .address {
+               width: 200px;
+               align-items: flex-start;
+            }
+
+            .mail {
+               margin-block: 20px;
+            }
          }
 
          span {

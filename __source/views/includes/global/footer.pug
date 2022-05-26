@@ -4,9 +4,18 @@ footer
       img(src="../images/logo.png", alt="")
 
       .info-box
-         span.address Rua Tal, 333 - Bairro Cidade/UF
-         span.mail contato@ciaphotography.com
-         span.number-phone 11 98888-0000
+         .contacts
+            .address
+               include ../../../../public/images/location.svg
+               span Rua Tal, 333 - Bairro Cidade/UF
+
+            .mail
+               include ../../../../public/images/mail.svg
+               span contato@ciaphotography.com
+
+            .number-phone
+               include ../../../../public/images/iphone.svg
+               span 11 98888-0000
 
          .social-media
             include ../../../../public/images/instagram.svg
