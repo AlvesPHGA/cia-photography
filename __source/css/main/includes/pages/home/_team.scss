@@ -1,0 +1,46 @@
+.team {
+   background-repeat: no-repeat;
+   background-position: 120% 240px;
+   padding: 100px 0 180px;
+   background-size: 50%;
+
+   .box-back {
+      height: fit-content;
+
+      .box-imgs {
+         position: relative;
+
+         img {
+            position: absolute;
+            &:nth-of-type(1) {
+               width: 350px;
+               left: 5%;
+               top: 0;
+            }
+
+            &:nth-of-type(2) {
+               width: 300px;
+               left: 15%;
+               top: 85px;
+            }
+
+            &:nth-of-type(3) {
+               width: 275px;
+               left: 3%;
+               top: 200px;
+            }
+         }
+      }
+
+      .__width-1200 {
+         display: flex;
+         justify-content: flex-end;
+
+         .text {
+            color: $davys_grey;
+            width: 500px;
+            margin-block: 40px;
+         }
+      }
+   }
+}

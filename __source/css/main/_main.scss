@@ -3,3 +3,37 @@
    padding: 0;
    box-sizing: border-box;
 }
+
+body {
+   background: $milk;
+}
+
+.title {
+   @include font_lora(
+      $_fSize: 80px,
+      $_fWeight: 900,
+      $_color: $barned_red,
+      $_lHeight: 88px
+   );
+}
+
+.text {
+   @include font_noto_sans(
+      $_fSize: 18px,
+      $_fWeight: 400,
+      $_color: $white,
+      $_lHeight: 27px
+   );
+}
+
+.link_btn {
+   @include font_bebas($_fSize: 30px, $_color: $smokey_topaz, $_lHeight: auto);
+
+   text-decoration: none;
+}
+
+.__width-1200 {
+   width: 1200px;
+   margin: 0 auto;
+   position: relative;
+}

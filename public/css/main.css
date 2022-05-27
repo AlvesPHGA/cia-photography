@@ -1,15 +1,40 @@
 /*!*****************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./__source/css/main.scss ***!
   \*****************************************************************************************************************/
-.__width-1200 {
-  width: 1200px;
-  margin: 0 auto;
-  position: relative; }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+body {
+  background: #fffff7; }
+
+.title {
+  font-family: "Lora", serif;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 88px;
+  color: #7f1300; }
+
+.text {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #fff; }
+
+.link_btn {
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: auto;
+  color: #91250c;
+  text-decoration: none; }
+
+.__width-1200 {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative; }
 
 header {
   position: relative;
@@ -66,12 +91,36 @@ header {
   background: #7f1300;
   height: 300px; }
 
-.home .text {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
-  color: #fff; }
+.home .team {
+  background-repeat: no-repeat;
+  background-position: 120% 240px;
+  padding: 100px 0 180px;
+  background-size: 50%; }
+  .home .team .box-back {
+    height: fit-content; }
+    .home .team .box-back .box-imgs {
+      position: relative; }
+      .home .team .box-back .box-imgs img {
+        position: absolute; }
+        .home .team .box-back .box-imgs img:nth-of-type(1) {
+          width: 350px;
+          left: 5%;
+          top: 0; }
+        .home .team .box-back .box-imgs img:nth-of-type(2) {
+          width: 300px;
+          left: 15%;
+          top: 85px; }
+        .home .team .box-back .box-imgs img:nth-of-type(3) {
+          width: 275px;
+          left: 3%;
+          top: 200px; }
+    .home .team .box-back .__width-1200 {
+      display: flex;
+      justify-content: flex-end; }
+      .home .team .box-back .__width-1200 .text {
+        color: #555555;
+        width: 500px;
+        margin-block: 40px; }
 
 .home .subheader {
   background-repeat: no-repeat;
@@ -89,7 +138,8 @@ header {
       object-fit: cover;
       position: absolute;
       right: 0;
-      top: 55px; }
+      top: 55px;
+      z-index: 1; }
 
 footer {
   position: relative;

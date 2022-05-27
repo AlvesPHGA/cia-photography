@@ -1,14 +1,6 @@
 .home {
    @import "../includes/global/subheader";
-
-   .text {
-      @include font_noto_sans(
-         $_fSize: 18px,
-         $_fWeight: 400,
-         $_color: $white,
-         $_lHeight: 27px
-      );
-   }
+   @import "../includes/pages/home/team";
 
    .subheader {
       background-repeat: no-repeat;
@@ -30,6 +22,7 @@
             position: absolute;
             right: 0;
             top: 55px;
+            z-index: 1;
          }
       }
    }
