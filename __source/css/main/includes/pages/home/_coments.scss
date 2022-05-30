@@ -1,0 +1,55 @@
+.coments {
+   padding-block: 80px;
+
+   h2 {
+      text-align: center;
+   }
+
+   .box-comments {
+      width: 90%;
+      border: 1px solid red;
+
+      .__slider {
+         width: 100%;
+
+         .__content-item {
+            width: 100%;
+
+            .__item {
+               display: flex;
+               position: relative;
+
+               img {
+                  width: 200px;
+                  height: 200px;
+                  object-fit: fill;
+               }
+
+               .__content {
+                  border: 2px $barned_red solid;
+                  border-radius: 5px;
+                  padding: 40px 40px 40px 180px;
+                  width: 950px;
+
+                  p {
+                     @include font_anybody(
+                        $_fSize: 16px,
+                        $_fWeight: 700,
+                        $_color: #000,
+                        $_lHeight: 24px
+                     );
+
+                     font-style: italic;
+                  }
+
+                  span {
+                     color: $davys_grey;
+                     text-transform: uppercase;
+                     font-weight: 700;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
