@@ -41,6 +41,11 @@
             width: 500px;
             margin-block: 40px;
          }
+
+         a:hover {
+            transition: 0.7s ease;
+            color: #d0644b;
+         }
       }
    }
 }

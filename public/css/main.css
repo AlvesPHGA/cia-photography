@@ -121,6 +121,9 @@ header {
         color: #555555;
         width: 500px;
         margin-block: 40px; }
+      .home .team .box-back .__width-1200 a:hover {
+        transition: 0.7s ease;
+        color: #d0644b; }
 
 .home .subheader {
   background-repeat: no-repeat;
