@@ -8,6 +8,10 @@ body {
    background: $milk;
 }
 
+a {
+   text-decoration: none;
+}
+
 .title {
    @include font_lora(
       $_fSize: 80px,
