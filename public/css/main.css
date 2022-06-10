@@ -228,6 +228,26 @@ header {
       top: 55px;
       z-index: 1; }
 
+.about .subheader {
+  position: relative;
+  background: #7f1300;
+  height: 300px; }
+
+.about .subheader {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 110%; }
+  .about .subheader .__width-1200 {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%; }
+    .about .subheader .__width-1200 h1 {
+      text-transform: uppercase;
+      color: #ffffea;
+      font-size: 40px;
+      line-height: 44px; }
+
 footer {
   position: relative;
   padding: 80px 0;
