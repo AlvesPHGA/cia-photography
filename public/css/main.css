@@ -242,6 +242,43 @@ header {
     color: #555555;
     text-align: center; }
 
+.about .qualities {
+  padding-bottom: 80px;
+  background-size: 100% 110%;
+  background-repeat: no-repeat;
+  background-position: 0px 90px; }
+  .about .qualities h2 {
+    font-size: 40px;
+    line-height: 44px;
+    color: #91250c;
+    font-weight: bold; }
+  .about .qualities p {
+    color: #555555;
+    font-size: 20px;
+    line-height: 30px; }
+  .about .qualities .box {
+    position: relative;
+    display: flex;
+    justify-content: end; }
+    .about .qualities .box img {
+      width: 200px;
+      position: absolute;
+      left: 0;
+      top: 40px; }
+    .about .qualities .box .content {
+      border: 2px solid #7f1300;
+      border-radius: 5px;
+      width: 1100px;
+      padding: 60px 200px 60px 300px; }
+      .about .qualities .box .content h2 {
+        margin-bottom: 20px; }
+  .about .qualities .between {
+    justify-content: start;
+    margin-block: 40px; }
+    .about .qualities .between img {
+      right: 0;
+      left: auto; }
+
 .about .subheader {
   background-repeat: no-repeat;
   background-position: center;
