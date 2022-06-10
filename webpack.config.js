@@ -31,6 +31,12 @@ module.exports = {
       filename: "./pages/index.html",
       inject: true,
     }),
+
+    new HtmlWebpackPlugin({
+      template: "__source/views/pages/about.pug",
+      filename: "./pages/about.html",
+      inject: true,
+    }),
   ],
 
   module: {
