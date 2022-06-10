@@ -233,6 +233,15 @@ header {
   background: #7f1300;
   height: 300px; }
 
+.about .sec-about {
+  padding-block: 80px;
+  background-repeat: no-repeat;
+  background-size: 50% 150%;
+  background-position: -200px -161px; }
+  .about .sec-about p {
+    color: #555555;
+    text-align: center; }
+
 .about .subheader {
   background-repeat: no-repeat;
   background-position: center;
