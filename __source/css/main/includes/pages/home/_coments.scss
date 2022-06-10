@@ -18,18 +18,23 @@
             .__item {
                display: flex;
                position: relative;
+               justify-content: center;
+               left: 4%;
 
                img {
                   width: 200px;
                   height: 200px;
                   object-fit: fill;
+                  position: absolute;
+                  left: 45px;
+                  bottom: 20px;
                }
 
                .__content {
                   border: 2px $barned_red solid;
                   border-radius: 5px;
-                  padding: 40px 40px 40px 180px;
-                  width: 950px;
+                  padding: 40px 60px 40px 140px;
+                  width: 800px;
 
                   p {
                      @include font_anybody(
@@ -40,6 +45,7 @@
                      );
 
                      font-style: italic;
+                     margin-bottom: 10px;
                   }
 
                   span {
