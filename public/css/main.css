@@ -295,6 +295,69 @@ header {
       font-size: 40px;
       line-height: 44px; }
 
+.team .subheader {
+  position: relative;
+  background: #7f1300;
+  height: 300px; }
+
+.team .staff {
+  padding-block: 80px; }
+  .team .staff h2 {
+    color: #91250c;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 600;
+    margin-bottom: 20px; }
+  .team .staff p {
+    color: #555555;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500; }
+  .team .staff .photographer {
+    width: 100%;
+    position: relative; }
+    .team .staff .photographer:nth-of-type(2) {
+      margin-block: 120px; }
+    .team .staff .photographer .content {
+      display: flex;
+      gap: 40px; }
+      .team .staff .photographer .content .img {
+        width: 300px;
+        height: 400px; }
+        .team .staff .photographer .content .img img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 5px; }
+      .team .staff .photographer .content .info {
+        width: 550px;
+        padding-top: 20px; }
+    .team .staff .photographer .between {
+      border: 2px solid #7f1300;
+      border-radius: 5px;
+      position: absolute;
+      right: 0;
+      width: 1050px;
+      bottom: -25px;
+      height: 450px;
+      z-index: -1;
+      background: #fff; }
+
+.team .subheader {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 110%; }
+  .team .subheader .__width-1200 {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%; }
+    .team .subheader .__width-1200 h1 {
+      text-transform: uppercase;
+      color: #ffffea;
+      font-size: 40px;
+      line-height: 44px; }
+
 footer {
   position: relative;
   padding: 80px 0;

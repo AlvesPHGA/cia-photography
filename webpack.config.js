@@ -30,13 +30,31 @@ module.exports = {
       template: "__source/views/pages/index.pug",
       filename: "./pages/index.html",
       inject: true,
-    }),
+    }), //index page
 
     new HtmlWebpackPlugin({
       template: "__source/views/pages/about.pug",
       filename: "./pages/about.html",
       inject: true,
-    }),
+    }), //about page
+
+    new HtmlWebpackPlugin({
+      template: "__source/views/pages/team.pug",
+      filename: "./pages/team.html",
+      inject: true,
+    }), //team page
+
+    // new HtmlWebpackPlugin({
+    //   template: "__source/views/pages/events.pug",
+    //   filename: "./pages/events.html",
+    //   inject: true,
+    // }), //events page
+
+    // new HtmlWebpackPlugin({
+    //   template: "__source/views/pages/contact.pug",
+    //   filename: "./pages/contact.html",
+    //   inject: true,
+    // }), //contact page
   ],
 
   module: {
