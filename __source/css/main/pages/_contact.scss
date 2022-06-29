@@ -1,0 +1,23 @@
+.contact {
+   @import "../includes/global/subheader";
+
+   .subheader {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 110%;
+
+      .__width-1200 {
+         justify-content: center;
+         display: flex;
+         align-items: center;
+         height: 100%;
+
+         h1 {
+            text-transform: uppercase;
+            color: $ivory;
+            font-size: 40px;
+            line-height: 44px;
+         }
+      }
+   }
+}

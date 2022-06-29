@@ -44,17 +44,17 @@ module.exports = {
       inject: true,
     }), //team page
 
-    // new HtmlWebpackPlugin({
-    //   template: "__source/views/pages/events.pug",
-    //   filename: "./pages/events.html",
-    //   inject: true,
-    // }), //events page
+    new HtmlWebpackPlugin({
+      template: "__source/views/pages/events.pug",
+      filename: "./pages/events.html",
+      inject: true,
+    }), //events page
 
-    // new HtmlWebpackPlugin({
-    //   template: "__source/views/pages/contact.pug",
-    //   filename: "./pages/contact.html",
-    //   inject: true,
-    // }), //contact page
+    new HtmlWebpackPlugin({
+      template: "__source/views/pages/contact.pug",
+      filename: "./pages/contact.html",
+      inject: true,
+    }), //contact page
   ],
 
   module: {
