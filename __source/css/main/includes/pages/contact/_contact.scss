@@ -1,0 +1,106 @@
+.contact {
+   padding-block: 80px;
+   background-size: 120% 120%;
+   background-repeat: no-repeat;
+   background-position: top;
+   z-index: 0;
+   position: relative;
+   .__width-1200 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 2rem;
+
+      form {
+         border: 2px solid $barned_red;
+         border-radius: 0.5rem;
+         background: $white;
+         padding: 2.5rem;
+         display: flex;
+         flex-direction: column;
+         position: relative;
+         gap: 1.25rem;
+
+         legend {
+            font-size: 1.25rem;
+            line-height: 1.8;
+         }
+
+         input,
+         textarea {
+            width: 100%;
+            border: 2px solid $barned_red;
+            border-radius: 0.3rem;
+            font-size: 1.5rem;
+            padding: 5px 10px;
+         }
+
+         input {
+            height: 40px;
+         }
+
+         textarea {
+            resize: none;
+            height: 100px;
+         }
+
+         .link_btn {
+            background-image: linear-gradient(
+               to bottom,
+               $very_pale_orange,
+               $vivid_tangerine
+            );
+            border: none;
+            cursor: pointer;
+            display: flex;
+            width: fit-content;
+            padding: 0.5rem 0.9rem;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.3rem;
+            margin-left: auto;
+
+            &:hover {
+               transition: 0.7s ease;
+               box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2),
+                  0px -3px 5px rgba(0, 0, 0, 0.2);
+            }
+         }
+      }
+
+      .box-info-contact {
+         padding-left: 2rem;
+         padding-top: 40px;
+
+         .box-contact {
+            margin-bottom: 20px;
+            span {
+               display: block;
+               font-size: 1.25rem;
+               color: $davys_grey;
+
+               &:nth-child(2) {
+                  margin-block: 1.1rem;
+               }
+            }
+
+            .box {
+               display: flex;
+               align-items: center;
+            }
+
+            .street {
+               width: 12.5rem;
+            }
+         }
+
+         svg {
+            transform: scale(0.8);
+
+            &:hover {
+               transition: 0.7s ease;
+               transform: scale(1);
+            }
+         }
+      }
+   }
+}

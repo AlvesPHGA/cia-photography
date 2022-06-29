@@ -1,0 +1,38 @@
+section.contact( style= 'background-image: url("../images/team/big-lines.png")')
+   .__width-1200
+      form
+         label
+            legend.title Nome
+            input(type="text", name="name")
+
+         label
+            legend.title Telefone / WhatsApp
+            input(type="tel", name="phone")
+
+         label
+            legend.title Email
+            input(type="email", name="email")
+
+         label
+            legend.title Mensagem
+            textarea(name="message")
+
+         button.link_btn Enviar
+
+      .box-info-contact
+         .box-contact
+            .box
+               include ../../../../../public/images/contact/location.svg
+               span.street.text Rua tal, 3333 - Bairro Cidade/UF
+            .box
+               include ../../../../../public/images/contact/email.svg
+               span.email.text contato@ciaphotography.com
+
+            .box
+               include ../../../../../public/images/contact/phone.svg
+               span.phone.text 11 98888-7777
+
+         .social-media
+            include ../../../../../public/images/contact/instagram.svg
+            include ../../../../../public/images/contact/facebook.svg
+            include ../../../../../public/images/contact/twitter.svg
