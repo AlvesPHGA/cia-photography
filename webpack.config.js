@@ -57,6 +57,18 @@ module.exports = {
     }), //events 01 page
 
     new HtmlWebpackPlugin({
+      template: "__source/views/pages/events/event02.pug",
+      filename: "./pages/event02.html",
+      inject: true,
+    }), //events 02 page
+
+    new HtmlWebpackPlugin({
+      template: "__source/views/pages/events/event03.pug",
+      filename: "./pages/event03.html",
+      inject: true,
+    }), //events 01 page
+
+    new HtmlWebpackPlugin({
       template: "__source/views/pages/contact.pug",
       filename: "./pages/contact.html",
       inject: true,
