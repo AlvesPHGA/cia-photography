@@ -1,0 +1,63 @@
+.see_too {
+   padding: 60px 0 80px;
+
+   h2 {
+      color: $barned_red;
+      text-transform: uppercase;
+      font-size: 3.75rem; // 60px
+      letter-spacing: 0.2rem;
+      text-align: center;
+      line-height: normal;
+   }
+
+   .line-back {
+      position: absolute;
+      width: 100%;
+      height: 110%;
+      border: 2px solid $apricot;
+      border-radius: 0.5rem;
+      z-index: -1;
+      top: 37px;
+   }
+
+   .box-cards {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 40px;
+      gap: 40px;
+
+      .cards {
+         height: fit-content;
+         width: fit-content;
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+         align-items: center;
+
+         img {
+            width: 300px;
+            height: 300px;
+            border-radius: 5px;
+            object-fit: cover;
+         }
+
+         span {
+            font-size: 1.5rem; //24px
+            line-height: 2.25;
+         }
+
+         &:hover {
+            img {
+               transition: 0.8s ease;
+               box-shadow: 0px 0px 10px 1px $barned_red;
+            }
+
+            span {
+               transition: 0.8s ease;
+               text-decoration: underline;
+            }
+         }
+      }
+   }
+}

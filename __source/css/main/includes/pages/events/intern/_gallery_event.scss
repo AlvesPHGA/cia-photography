@@ -1,0 +1,28 @@
+.gallery_event {
+   .__width-1200 {
+      border: 1px solid red;
+
+      .gallery {
+         width: 100%;
+         height: auto;
+
+         .gallery_content {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem; // 20px
+            justify-content: center;
+
+            .gallery_item {
+               width: 500px;
+               height: 380px;
+
+               img {
+                  object-fit: fill;
+                  height: 100%;
+                  border-radius: 0.5rem;
+               }
+            }
+         }
+      }
+   }
+}
