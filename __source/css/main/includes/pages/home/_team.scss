@@ -4,6 +4,24 @@
    padding: 100px 0 180px;
    background-size: 50%;
 
+   @include mobile_s {
+      padding: 40px 0;
+   }
+
+   h2 {
+      @include mobile_s {
+         font-size: 1.875rem; // 30px
+         line-height: 2.5; // 40px
+      }
+   }
+
+   .__width-1200 {
+      @include mobile_s {
+         padding: 0 15px;
+         width: 100%;
+      }
+   }
+
    .box-back {
       height: fit-content;
 
@@ -12,6 +30,7 @@
 
          img {
             position: absolute;
+
             &:nth-of-type(1) {
                width: 350px;
                left: 5%;
@@ -29,6 +48,10 @@
                left: 3%;
                top: 200px;
             }
+
+            @include mobile_s {
+               display: none;
+            }
          }
       }
 
@@ -40,6 +63,12 @@
             color: $davys_grey;
             width: 500px;
             margin-block: 40px;
+
+            @include mobile_s {
+               width: 100%;
+               font-size: 1rem; // 16px
+               line-height: 1.5; // 24px
+            }
          }
 
          a:hover {

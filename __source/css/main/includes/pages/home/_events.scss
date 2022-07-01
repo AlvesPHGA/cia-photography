@@ -5,17 +5,34 @@
    background-repeat: no-repeat;
    background-size: 110% 95%;
 
+   .__width-1200 {
+      @include mobile_s {
+         padding: 0 15px;
+         width: 100%;
+      }
+   }
+
    .title {
       color: $ivory;
    }
 
    h2 {
       text-align: center;
+
+      @include mobile_s {
+         font-size: 1.875rem; // 30px
+         line-height: 2.5; // 40px
+      }
    }
 
    span {
       font-size: 24px;
       line-height: 36px;
+
+      @include mobile_s {
+         font-size: 1rem; // 16px
+         line-height: 1.5; // 24px
+      }
    }
 
    svg {
@@ -28,6 +45,11 @@
       align-items: center;
       justify-content: space-around;
       margin-top: 40px;
+
+      @include mobile_s {
+         flex-direction: column;
+         gap: 1.5625rem;
+      }
 
       .cards {
          height: fit-content;

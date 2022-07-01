@@ -150,6 +150,17 @@ header {
   background-position: 120% 240px;
   padding: 100px 0 180px;
   background-size: 50%; }
+  @media (max-width: 320px) {
+    .home .team {
+      padding: 40px 0; } }
+  @media (max-width: 320px) {
+    .home .team h2 {
+      font-size: 1.875rem;
+      line-height: 2.5; } }
+  @media (max-width: 320px) {
+    .home .team .__width-1200 {
+      padding: 0 15px;
+      width: 100%; } }
   .home .team .box-back {
     height: fit-content; }
     .home .team .box-back .box-imgs {
@@ -168,6 +179,9 @@ header {
           width: 275px;
           left: 3%;
           top: 200px; }
+        @media (max-width: 320px) {
+          .home .team .box-back .box-imgs img {
+            display: none; } }
     .home .team .box-back .__width-1200 {
       display: flex;
       justify-content: flex-end; }
@@ -175,6 +189,11 @@ header {
         color: #555555;
         width: 500px;
         margin-block: 40px; }
+        @media (max-width: 320px) {
+          .home .team .box-back .__width-1200 .text {
+            width: 100%;
+            font-size: 1rem;
+            line-height: 1.5; } }
       .home .team .box-back .__width-1200 a:hover {
         transition: 0.7s ease;
         color: #d0644b; }
@@ -185,13 +204,25 @@ header {
   padding-block: 40px;
   background-repeat: no-repeat;
   background-size: 110% 95%; }
+  @media (max-width: 320px) {
+    .home .events .__width-1200 {
+      padding: 0 15px;
+      width: 100%; } }
   .home .events .title {
     color: #ffffea; }
   .home .events h2 {
     text-align: center; }
+    @media (max-width: 320px) {
+      .home .events h2 {
+        font-size: 1.875rem;
+        line-height: 2.5; } }
   .home .events span {
     font-size: 24px;
     line-height: 36px; }
+    @media (max-width: 320px) {
+      .home .events span {
+        font-size: 1rem;
+        line-height: 1.5; } }
   .home .events svg {
     position: absolute;
     bottom: 500px; }
@@ -200,6 +231,10 @@ header {
     align-items: center;
     justify-content: space-around;
     margin-top: 40px; }
+    @media (max-width: 320px) {
+      .home .events .box-cards {
+        flex-direction: column;
+        gap: 1.5625rem; } }
     .home .events .box-cards .cards {
       height: fit-content;
       width: fit-content;
