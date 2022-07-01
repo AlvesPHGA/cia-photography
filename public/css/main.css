@@ -699,10 +699,19 @@ header {
   background-position: top;
   z-index: 0;
   position: relative; }
+  @media (max-width: 320px) {
+    .contact .contact {
+      padding-block: 40px; } }
   .contact .contact .__width-1200 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem; }
+    @media (max-width: 320px) {
+      .contact .contact .__width-1200 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px; } }
     .contact .contact .__width-1200 form {
       border: 2px solid #7f1300;
       border-radius: 0.5rem;
@@ -712,6 +721,10 @@ header {
       flex-direction: column;
       position: relative;
       gap: 1.25rem; }
+      @media (max-width: 320px) {
+        .contact .contact .__width-1200 form {
+          width: fit-content;
+          padding: 1rem; } }
       .contact .contact .__width-1200 form legend {
         font-size: 1.25rem;
         line-height: 1.8; }
@@ -744,6 +757,12 @@ header {
     .contact .contact .__width-1200 .box-info-contact {
       padding-left: 2rem;
       padding-top: 40px; }
+      @media (max-width: 320px) {
+        .contact .contact .__width-1200 .box-info-contact {
+          padding-left: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center; } }
       .contact .contact .__width-1200 .box-info-contact .box-contact {
         margin-bottom: 20px; }
         .contact .contact .__width-1200 .box-info-contact .box-contact span {
@@ -755,10 +774,20 @@ header {
         .contact .contact .__width-1200 .box-info-contact .box-contact .box {
           display: flex;
           align-items: center; }
+          @media (max-width: 320px) {
+            .contact .contact .__width-1200 .box-info-contact .box-contact .box {
+              flex-direction: column; } }
         .contact .contact .__width-1200 .box-info-contact .box-contact .street {
           width: 12.5rem; }
+          @media (max-width: 320px) {
+            .contact .contact .__width-1200 .box-info-contact .box-contact .street {
+              width: 100%;
+              text-align: center; } }
       .contact .contact .__width-1200 .box-info-contact svg {
         transform: scale(0.8); }
+        @media (max-width: 320px) {
+          .contact .contact .__width-1200 .box-info-contact svg {
+            margin: auto; } }
         .contact .contact .__width-1200 .box-info-contact svg:hover {
           transition: 0.7s ease;
           transform: scale(1); }
@@ -772,11 +801,20 @@ header {
     display: flex;
     align-items: center;
     height: 100%; }
+    @media (max-width: 320px) {
+      .contact .subheader .__width-1200 {
+        width: 100%;
+        padding: 0 15px; } }
     .contact .subheader .__width-1200 h1 {
       text-transform: uppercase;
       color: #ffffea;
       font-size: 40px;
       line-height: 44px; }
+      @media (max-width: 320px) {
+        .contact .subheader .__width-1200 h1 {
+          font-size: 1.875rem;
+          line-height: 2;
+          text-align: center; } }
 
 .event_intern .subheader {
   position: relative;
