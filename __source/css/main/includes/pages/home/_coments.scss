@@ -1,13 +1,32 @@
 .coments {
    padding-block: 80px;
 
+   @include mobile_s {
+      padding-block: 40px;
+   }
+
+   .__width-1200 {
+      @include mobile_s {
+         width: 100%;
+         padding: 0 15px;
+      }
+   }
+
    h2 {
       text-align: center;
+
+      @include mobile_s {
+         font-size: 1.875rem; // 30px
+         line-height: 2.5; // 40px
+      }
    }
 
    .box-comments {
       width: 90%;
-      border: 1px solid red;
+
+      @include mobile_s {
+         width: 100%;
+      }
 
       .__slider {
          width: 100%;
@@ -21,6 +40,10 @@
                justify-content: center;
                left: 4%;
 
+               @include mobile_s {
+                  left: auto;
+               }
+
                img {
                   width: 200px;
                   height: 200px;
@@ -28,6 +51,15 @@
                   position: absolute;
                   left: 45px;
                   bottom: 20px;
+
+                  @include mobile_s {
+                     width: 100px;
+                     height: 100px;
+                     bottom: auto;
+                     top: 0px;
+                     left: 0px;
+                     z-index: 0;
+                  }
                }
 
                .__content {
@@ -36,22 +68,42 @@
                   padding: 40px 60px 40px 140px;
                   width: 800px;
 
+                  @include mobile_s {
+                     width: 90%;
+                     padding: 30px 15px 20px;
+                     text-align: end;
+                     margin-top: 30px;
+                  }
+
                   p {
                      @include font_anybody(
-                        $_fSize: 16px,
+                        $_fSize: 1rem,
                         $_fWeight: 700,
                         $_color: #000,
-                        $_lHeight: 24px
+                        $_lHeight: 1.5
                      );
 
                      font-style: italic;
                      margin-bottom: 10px;
+
+                     @include mobile_s {
+                        position: relative;
+                        z-index: 1;
+                        letter-spacing: 0.2px;
+
+                        text-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+                     }
                   }
 
                   span {
                      color: $davys_grey;
                      text-transform: uppercase;
                      font-weight: 700;
+
+                     @include mobile_s {
+                        font-size: 0.875rem;
+                        line-height: 1.31;
+                     }
                   }
                }
             }

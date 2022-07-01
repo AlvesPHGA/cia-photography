@@ -6,6 +6,10 @@ footer {
    flex-direction: column;
    align-items: center;
 
+   @include mobile_s {
+      padding: 40px 0;
+   }
+
    svg {
       position: absolute;
       z-index: 0;
@@ -19,15 +23,29 @@ footer {
       display: flex;
       justify-content: space-between;
 
+      @include mobile_s {
+         width: 100%;
+         padding: 0 15px;
+         flex-direction: column;
+      }
+
       img {
          height: 100%;
          width: 400px;
          object-fit: contain;
+
+         @include mobile_s {
+            width: 100%;
+         }
       }
 
       .info-box {
          display: flex;
          flex-direction: column;
+
+         @include mobile_s {
+            display: none;
+         }
 
          .contacts {
             .address,
@@ -36,16 +54,26 @@ footer {
                display: flex;
                align-items: center;
                gap: 12px;
+
                svg {
                   position: static;
                   width: 25px;
                   height: 25px;
+               }
+
+               @include mobile_s {
+                  flex-direction: column;
                }
             }
 
             .address {
                width: 200px;
                align-items: flex-start;
+
+               @include mobile_s {
+                  width: 100%;
+                  align-items: center;
+               }
             }
 
             .mail {
@@ -77,6 +105,11 @@ footer {
          flex-direction: column;
          gap: 20px;
 
+         @include mobile_s {
+            align-items: center;
+            margin-block: 40px;
+         }
+
          a {
             text-decoration: none;
 
@@ -93,6 +126,68 @@ footer {
             );
          }
       }
+
+      .info-box-mobile {
+         display: none;
+         flex-direction: column;
+
+         @include mobile_s {
+            display: flex;
+            align-items: center;
+         }
+
+         .contacts {
+            .address,
+            .mail,
+            .number-phone {
+               display: flex;
+               align-items: center;
+               gap: 12px;
+
+               svg {
+                  position: static;
+                  width: 25px;
+                  height: 25px;
+               }
+
+               @include mobile_s {
+                  flex-direction: column;
+               }
+            }
+
+            .address {
+               width: 200px;
+               align-items: flex-start;
+
+               @include mobile_s {
+                  width: 100%;
+                  align-items: center;
+               }
+            }
+
+            .mail {
+               margin-block: 20px;
+            }
+         }
+
+         span {
+            @include font_noto_sans(
+               $_fSize: 16px,
+               $_fWeight: 400,
+               $_color: $papaya_whip,
+               $_lHeight: auto
+            );
+         }
+
+         .social-media {
+            margin-top: 30px;
+            svg {
+               position: static;
+               width: 45px;
+               height: 45px;
+            }
+         }
+      }
    }
 
    .reserved {
@@ -104,5 +199,9 @@ footer {
          $_color: $barned_red,
          $_lHeight: 27px
       );
+
+      @include mobile_s {
+         margin-top: 40px;
+      }
    }
 }
