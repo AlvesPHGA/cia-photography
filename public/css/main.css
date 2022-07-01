@@ -273,11 +273,13 @@ header {
       width: 100%;
       padding: 0 15px; } }
   .home .coments h2 {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 40px; }
     @media (max-width: 320px) {
       .home .coments h2 {
         font-size: 1.875rem;
-        line-height: 2.5; } }
+        line-height: 2.5;
+        margin-bottom: 20px; } }
   .home .coments .box-comments {
     width: 90%; }
     @media (max-width: 320px) {
