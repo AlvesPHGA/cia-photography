@@ -4,17 +4,39 @@
    background-repeat: no-repeat;
    background-position: 0px 90px;
 
+   @include mobile_s {
+      padding-block: 40px;
+   }
+
    h2 {
       font-size: 40px;
       line-height: 44px;
       color: $smokey_topaz;
       font-weight: bold;
+
+      @include mobile_s {
+         font-size: 1.25rem; // 20px
+         line-height: 1.875; // 30px
+      }
    }
 
    p {
       color: $davys_grey;
       font-size: 20px;
       line-height: 30px;
+
+      @include mobile_s {
+         font-size: 1rem;
+         line-height: 1.5;
+         text-align: center;
+      }
+   }
+
+   .__width-1200 {
+      @include mobile_s {
+         width: 100%;
+         padding: 0 15px;
+      }
    }
 
    .box {
@@ -22,11 +44,23 @@
       display: flex;
       justify-content: end;
 
+      @include mobile_s {
+         width: 100%;
+         flex-direction: column;
+      }
+
       img {
          width: 200px;
          position: absolute;
          left: 0;
          top: 40px;
+
+         @include mobile_s {
+            left: 10px;
+            width: 80px;
+            top: auto;
+            bottom: 80%;
+         }
       }
 
       .content {
@@ -36,8 +70,17 @@
          padding: 60px 200px 60px 300px;
          background: $white;
 
+         @include mobile_s {
+            width: 100%;
+            padding: 0 10px 15px;
+         }
+
          h2 {
             margin-bottom: 20px;
+
+            @include mobile_s {
+               text-align: center;
+            }
          }
       }
    }
@@ -46,9 +89,19 @@
       justify-content: start;
       margin-block: 40px;
 
+      @include mobile_s {
+         margin-block: 60px;
+      }
+
       img {
          right: 0;
          left: auto;
+
+         @include mobile_s {
+            right: auto;
+            left: 10px;
+            bottom: 80%;
+         }
       }
    }
 }

@@ -2,4 +2,9 @@
    position: relative;
    background: $barned_red;
    height: 300px;
+
+   @include mobile_s {
+      height: auto;
+      padding: 20px 0;
+   }
 }

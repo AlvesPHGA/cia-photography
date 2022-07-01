@@ -4,8 +4,24 @@
    background-size: 50% 150%;
    background-position: -200px -161px;
 
+   @include mobile_s {
+      padding-block: 40px;
+   }
+
    p {
       color: $davys_grey;
       text-align: center;
+
+      @include mobile_s {
+         font-size: 1rem;
+         line-height: 1.5;
+      }
+   }
+
+   .__width-1200 {
+      @include mobile_s {
+         width: 100%;
+         padding: 0 15px;
+      }
    }
 }
