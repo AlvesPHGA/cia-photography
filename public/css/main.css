@@ -268,8 +268,20 @@ header {
     display: flex;
     align-items: center;
     height: 100%; }
+    @media (max-width: 320px) {
+      .home .subheader .__width-1200 {
+        justify-content: center;
+        width: 100%;
+        padding: 15px; } }
+    @media (max-width: 320px) {
+      .home .subheader .__width-1200 p {
+        font-size: 1rem;
+        line-height: 1.5; } }
     .home .subheader .__width-1200 .text {
       width: 500px; }
+      @media (max-width: 320px) {
+        .home .subheader .__width-1200 .text {
+          width: 100%; } }
     .home .subheader .__width-1200 img {
       width: 400px;
       border-radius: 7px;
@@ -278,6 +290,9 @@ header {
       right: 0;
       top: 55px;
       z-index: 1; }
+      @media (max-width: 320px) {
+        .home .subheader .__width-1200 img {
+          display: none; } }
 
 .about .subheader {
   position: relative;
