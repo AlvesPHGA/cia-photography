@@ -2,8 +2,24 @@
    padding-top: 80px;
    padding-bottom: 60px;
 
+   @include mobile_s {
+      padding-block: 20px;
+   }
+
+   .__width-1200 {
+      @include mobile_s {
+         padding: 0 15px;
+         width: 100%;
+      }
+   }
+
    p {
       color: $davys_grey;
       text-align: center;
+
+      @include mobile_s {
+         font-size: 1rem;
+         line-height: 1.5;
+      }
    }
 }

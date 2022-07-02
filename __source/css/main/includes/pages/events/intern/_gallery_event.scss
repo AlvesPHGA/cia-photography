@@ -2,6 +2,11 @@
    .__width-1200 {
       border: 1px solid red;
 
+      @include mobile_s {
+         padding: 0 15px;
+         width: 100%;
+      }
+
       .gallery {
          width: 100%;
          height: auto;
@@ -12,9 +17,18 @@
             gap: 1.25rem; // 20px
             justify-content: center;
 
+            @include mobile_s {
+               gap: 0.625rem; // 10px
+            }
+
             .gallery_item {
                width: 500px;
                height: 380px;
+
+               @include mobile_s {
+                  width: 80%;
+                  height: 200px;
+               }
 
                img {
                   object-fit: fill;

@@ -1,6 +1,10 @@
 .see_too {
    padding: 60px 0 80px;
 
+   @include mobile_s {
+      padding: 40px 0;
+   }
+
    h2 {
       color: $barned_red;
       text-transform: uppercase;
@@ -8,6 +12,19 @@
       letter-spacing: 0.2rem;
       text-align: center;
       line-height: normal;
+
+      @include mobile_s {
+         font-size: 1.875rem;
+         line-height: 2;
+         text-align: center;
+      }
+   }
+
+   .__width-1200 {
+      @include mobile_s {
+         width: 100%;
+         padding: 0 15px;
+      }
    }
 
    .line-back {
@@ -18,6 +35,10 @@
       border-radius: 0.5rem;
       z-index: -1;
       top: 37px;
+
+      @include mobile_s {
+         display: none;
+      }
    }
 
    .box-cards {
@@ -26,6 +47,12 @@
       justify-content: center;
       margin-top: 40px;
       gap: 40px;
+
+      @include mobile_s {
+         flex-direction: column;
+         margin-top: 20px;
+         gap: 20px;
+      }
 
       .cards {
          height: fit-content;
@@ -40,6 +67,11 @@
             height: 300px;
             border-radius: 5px;
             object-fit: cover;
+
+            @include mobile_s {
+               width: 100%;
+               height: 200px;
+            }
          }
 
          span {

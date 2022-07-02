@@ -15,11 +15,22 @@
          align-items: center;
          height: 100%;
 
+         @include mobile_s {
+            width: 100%;
+            padding: 20px 15px;
+         }
+
          h1 {
             text-transform: uppercase;
             color: $ivory;
             font-size: 40px;
             line-height: 44px;
+
+            @include mobile_s {
+               font-size: 1.875rem;
+               line-height: 2;
+               text-align: center;
+            }
          }
       }
    }
