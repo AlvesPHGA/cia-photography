@@ -665,11 +665,17 @@ header {
   background-position: top;
   position: relative;
   z-index: 0; }
+  @media (max-width: 320px) {
+    .events .event {
+      padding-block: 40px; } }
   .events .event h2 {
     font-size: 1.8rem;
     font-weight: 600;
     line-height: normal;
     color: #91250c; }
+    @media (max-width: 320px) {
+      .events .event h2 {
+        text-align: center; } }
   .events .event p {
     color: #555555;
     font-size: 1.125rem;
@@ -677,10 +683,25 @@ header {
     font-weight: 500;
     margin-top: 1.25rem;
     margin-bottom: 2.5rem; }
+    @media (max-width: 320px) {
+      .events .event p {
+        font-size: 1rem;
+        margin-block: 1.25rem;
+        text-align: center; } }
+  @media (max-width: 320px) {
+    .events .event .__width-1200 {
+      width: 100%;
+      padding: 0 15px; } }
   .events .event .box-event {
     display: flex; }
+    @media (max-width: 320px) {
+      .events .event .box-event {
+        flex-direction: column; } }
     .events .event .box-event .img-ev {
       width: 120rem; }
+      @media (max-width: 320px) {
+        .events .event .box-event .img-ev {
+          width: 100%; } }
       .events .event .box-event .img-ev img {
         height: 100%;
         border-radius: 5px;
@@ -688,6 +709,9 @@ header {
     .events .event .box-event .content {
       position: relative;
       padding: 3.87rem 6.25rem; }
+      @media (max-width: 320px) {
+        .events .event .box-event .content {
+          padding: 10px 10px 0; } }
       .events .event .box-event .content .link_btn {
         background-image: linear-gradient(to bottom, #ffdac1, #f8a68d);
         display: flex;
@@ -702,9 +726,16 @@ header {
         .events .event .box-event .content .link_btn:hover {
           transition: 0.7s ease;
           box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2), 0px -3px 5px rgba(0, 0, 0, 0.2); }
+        @media (max-width: 320px) {
+          .events .event .box-event .content .link_btn {
+            position: static;
+            margin: auto; } }
   .events .event .box-bet {
     margin-block: 40px;
     position: relative; }
+    @media (max-width: 320px) {
+      .events .event .box-bet {
+        margin: 40px 0 60px; } }
     .events .event .box-bet .between {
       border: 2px solid #7f1300;
       border-radius: 5px;
@@ -715,6 +746,12 @@ header {
       height: 420px;
       z-index: -1;
       background: #fff; }
+      @media (max-width: 320px) {
+        .events .event .box-bet .between {
+          width: 100%;
+          height: 490px;
+          bottom: auto;
+          top: 180px; } }
 
 .events .subheader {
   background-repeat: no-repeat;
@@ -725,11 +762,20 @@ header {
     display: flex;
     align-items: center;
     height: 100%; }
+    @media (max-width: 320px) {
+      .events .subheader .__width-1200 {
+        width: 100%;
+        padding: 20px 15px; } }
     .events .subheader .__width-1200 h1 {
       text-transform: uppercase;
       color: #ffffea;
       font-size: 40px;
       line-height: 44px; }
+      @media (max-width: 320px) {
+        .events .subheader .__width-1200 h1 {
+          font-size: 1.875rem;
+          line-height: 2;
+          text-align: center; } }
 
 .contact .subheader {
   position: relative;
