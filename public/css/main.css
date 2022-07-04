@@ -50,7 +50,11 @@ header {
   @media (max-width: 320px) {
     header {
       height: 120px;
-      padding: 15px 0; } }
+      padding: 15px 0;
+      position: fixed;
+      width: 100%;
+      z-index: 100;
+      top: 0; } }
   header svg {
     position: absolute;
     z-index: 0;
@@ -86,9 +90,21 @@ header {
       margin-top: 30px; }
       @media (max-width: 320px) {
         header .__width-1200 .nav-menu {
-          display: flex;
+          display: none;
           flex-direction: column;
-          display: none; } }
+          position: fixed;
+          width: 100%;
+          height: 85vh;
+          top: 75px;
+          z-index: 100;
+          background: red;
+          left: 0;
+          gap: 20px;
+          padding-top: 2rem;
+          align-items: center;
+          background: #5a0000; } }
+      header .__width-1200 .nav-menu.__active {
+        display: flex; }
       header .__width-1200 .nav-menu a {
         font-family: "Anybody", cursive;
         font-size: 18px;
@@ -147,7 +163,8 @@ header {
   @media (max-width: 320px) {
     .home .subheader {
       height: auto;
-      padding: 20px 0; } }
+      padding: 20px 0;
+      margin-top: 120px; } }
 
 .home .team {
   background-repeat: no-repeat;
@@ -399,7 +416,8 @@ header {
   @media (max-width: 320px) {
     .about .subheader {
       height: auto;
-      padding: 20px 0; } }
+      padding: 20px 0;
+      margin-top: 120px; } }
 
 .about .sec-about {
   padding-block: 80px;
@@ -531,7 +549,8 @@ header {
   @media (max-width: 320px) {
     .team .subheader {
       height: auto;
-      padding: 20px 0; } }
+      padding: 20px 0;
+      margin-top: 120px; } }
 
 .team .staff {
   padding-block: 80px;
@@ -656,7 +675,8 @@ header {
   @media (max-width: 320px) {
     .events .subheader {
       height: auto;
-      padding: 20px 0; } }
+      padding: 20px 0;
+      margin-top: 120px; } }
 
 .events .event {
   padding-block: 80px;
@@ -784,7 +804,8 @@ header {
   @media (max-width: 320px) {
     .contact .subheader {
       height: auto;
-      padding: 20px 0; } }
+      padding: 20px 0;
+      margin-top: 120px; } }
 
 .contact .contact {
   padding-block: 80px;
@@ -917,7 +938,8 @@ header {
   @media (max-width: 320px) {
     .event_intern .subheader {
       height: auto;
-      padding: 20px 0; } }
+      padding: 20px 0;
+      margin-top: 120px; } }
 
 .event_intern .about_event {
   padding-top: 80px;
